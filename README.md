@@ -77,7 +77,7 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         <p align="top"><b>Aula: Controller categoria #1 | Cadastrar categoria</b></p>
         <p align="justify">Criação Controller.py </p>
         <ul>
-            <li>Função cadastrar categoria.</li>            
+            <li>Função cadastrar categoria.</li>
         </ul>
     </td> 
     </tr>
@@ -87,9 +87,20 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         <p align="top"><b>Aula: Controller categoria #2 | Remover categoria</b></p>
         <p align="justify">Atualização Controller.py </p>
         <ul>
-            <li>Função remover categoria.</li>            
+            <li>Função remover categoria.</li>
         </ul>
     </td> 
     </tr>
+    </tr>
+    <tr>
+    <th>06</th>
+    <td>
+        <p align="top"><b>Aula: Controller categoria #3 | Alterar categoria</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função alterar categoria.</li>
+        </ul>
+    </td> 
+    </tr>    
 </tbody>
 </table>
