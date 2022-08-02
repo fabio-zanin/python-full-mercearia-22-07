@@ -4,11 +4,11 @@
 
 Projeto para gerenciamento de mercearia baseado em Python 3.
 
-Projeto desenvolvido com a realização do curso Python Full, em Python Python 3.8.10 no Linux Mint XFCE 20.3 Una na IDE Visual Studio Code 1.69.2.
+Projeto desenvolvido com a realização do curso Python Full, em Python 3.8.10 no Linux Mint XFCE 20.3 Una na IDE Visual Studio Code 1.69.2.
 
 ## Implementações
 
-- Cadastro de produtos, vendas em arquivos de texto, utilizando arquitetura MVC.
+- Cadastro de Categoria, Produtos, Estoque, Venda, Fonercedor, Pessoa, e Funcionario em arquivos de texto, utilizando arquitetura MVC.
 
 ## Tecnologias utilizadas
 
@@ -54,12 +54,23 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         <p align="top"><b>Criação da DAO #1</b></p>
         <p align="justify">Criação da DAO.py </p>
         <ul>
-            <li>DaoCategoria</li>
-            <li>métodos: salvar e ler</li>
-            <li>DaoVenda</li>
+            <li>DaoCategoria e DaoVenda</li>
             <li>métodos: salvar e ler</li>
         </ul>
     </td> 
     </tr>
+        </tr>
+    <tr>
+    <th>03</th>
+    <td>
+        <p align="top"><b>Atualização da DAO</b></p>
+        <p align="justify">Atualização da DAO.py </p>
+        <ul>
+            <li> DaoEstoque, DaoFornecedor, DaoPessoa, e DaoFuncionario</li>
+            <li>métodos: salvar e ler</li>
+        </ul>
+    </td> 
+    </tr>
+
 </tbody>
 </table>
