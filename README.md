@@ -35,7 +35,7 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
     <tr>
     <th>01</th>
     <td>
-        <p align="top"><b>Criação da Model</b></p>
+        <p align="top"><b>Aula: Criação da Model</b></p>
         <p align="justify">Criação da Model.py e das classes:</p>
         <ul>
             <li>class Categoria</li>
@@ -51,7 +51,7 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
     <tr>
     <th>02</th>
     <td>
-        <p align="top"><b>Criação da DAO #1</b></p>
+        <p align="top"><b>Aula: Criação da DAO #1</b></p>
         <p align="justify">Criação da DAO.py </p>
         <ul>
             <li>DaoCategoria e DaoVenda</li>
@@ -63,14 +63,23 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
     <tr>
     <th>03</th>
     <td>
-        <p align="top"><b>Atualização da DAO</b></p>
+        <p align="top"><b>Aula: DAO #2</b></p>
         <p align="justify">Atualização da DAO.py </p>
         <ul>
-            <li> DaoEstoque, DaoFornecedor, DaoPessoa, e DaoFuncionario</li>
+            <li>DaoEstoque, DaoFornecedor, DaoPessoa, e DaoFuncionario</li>
             <li>métodos: salvar e ler</li>
         </ul>
     </td> 
     </tr>
-
+    <tr>
+    <th>04</th>
+    <td>
+        <p align="top"><b>Aula: Controller categoria #1 | Cadastrar categoria</b></p>
+        <p align="justify">Criação Controller.py </p>
+        <ul>
+            <li>Função cadastrar categoria.</li>            
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>
