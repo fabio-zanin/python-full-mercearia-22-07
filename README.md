@@ -81,5 +81,15 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+    <tr>
+    <th>05</th>
+    <td>
+        <p align="top"><b>Aula: Controller categoria #2 | Remover categoria</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função remover categoria.</li>            
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>
