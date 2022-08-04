@@ -112,5 +112,17 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+    </tr>
+    <tr>
+    <th>08</th>
+    <td>
+        <p align="top"><b>Aula: Controller estoque #1 | Cadastro de produto</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função cadastro de produtos.</li>
+        </ul>
+    </td> 
+    </tr>
+
 </tbody>
 </table>
