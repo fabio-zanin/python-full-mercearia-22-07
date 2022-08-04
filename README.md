@@ -101,6 +101,16 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
             <li>Função alterar categoria.</li>
         </ul>
     </td> 
-    </tr>    
+    </tr>
+    <tr>
+    <th>07</th>
+    <td>
+        <p align="top"><b>Aula: Controller categoria #4 | Mostrar categoria</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função mostrar categoria.</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>
