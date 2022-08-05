@@ -133,5 +133,25 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+    <tr>
+    <th>10</th>
+    <td>
+        <p align="top"><b>Aula: Controller estoque #3 | Alterar produto</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função alterar produto.</li>
+        </ul>
+    </td> 
+    </tr>
+       <tr>
+    <th>11</th>
+    <td>
+        <p align="top"><b>Aula: Controller estoque #4 | Mostrar estoque</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função mostrar produto.</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>

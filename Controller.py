@@ -132,14 +132,34 @@ class ControllerEstoque:
                 arq.writelines(i.produto.nome + "|" + i.produto.preco + "|" +
                             i.produto.categoria + "|" + str(i.quantidade))
                 arq.writelines('\n')
+    
+    def mostrarProduto(self):
+        estoque = DaoEstoque.ler()
+        if len(estoque) == 0:
+            print('Estoque vazio.')
+        else:
+            print('======Produtos======')
+            for i in estoque:                
+                print(f'Nome: {i.produto.nome}\n'
+                      f'Preço: {i.produto.preco}\n'
+                      f'Categoria: {i.produto.categoria}\n'
+                      f'Qauntidade: {i.quantidade}'
+                )
+                print('--------------------')
+
 
 # Cadastrar Produtos
 # a = ControllerEstoque()
 # a.cadastrarProduto('banana', '5', 'Verduras', 10)
 
-# REmover Produto
+# Remover Produto
 # a = ControllerEstoque()
 # a.removerProduto('banana')
 
+# Alterar Produto
+# a = ControllerEstoque()
+# a.alterarProduto('banana', 'maca', '5', 'Verduras', '20')
+
+# Mostrar Produto
 a = ControllerEstoque()
-a.alterarProduto('banana', 'maca', '5', 'Verduras', '20')
+a.mostrarProduto()
