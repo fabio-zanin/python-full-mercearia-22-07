@@ -123,6 +123,15 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
-
+    <tr>
+    <th>09</th>
+    <td>
+        <p align="top"><b>Aula: Controller estoque #2 | Remover produto</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função remover produto.</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>
