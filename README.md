@@ -1,4 +1,6 @@
-# Mercearia ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square)
+# Mercearia ![Badge em Desenvolvimento](http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge)
+
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/dwyl/auth_plug/Elixir%20CI?label=build&style=flat-square)
 
 ## Sobre 
 
@@ -21,6 +23,9 @@ Projeto desenvolvido com a realização do curso Python Full, em Python 3.8.10 n
 ## Ajuda
 
 Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio-zanin/python-full-mercearia-22-07/issues) ou via e-mail [f481011@gmail.com](f481011@gmail.com)
+
+
+## Aulas
 
 ### Projeto prático 1 | Software para gerenciamento de mercearia
 
@@ -143,7 +148,7 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
-       <tr>
+    <tr>
     <th>11</th>
     <td>
         <p align="top"><b>Aula: Controller estoque #4 | Mostrar estoque</b></p>
@@ -153,5 +158,15 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+    <tr>
+    <th>12</th>
+    <td>
+        <p align="top"><b>Aula: Controller venda #1 | Efetuar venda</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função efetuar venda.</li>
+        </ul>
+    </td> 
+    </tr>    
 </tbody>
 </table>

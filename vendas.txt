@@ -1,2 +1,1 @@
-banana|5|frutas|caio|marcos|3|29/07/2022
-banana|5|frutas|caio|marcos|3|29/07/2022
+maca|5|Frutas|joão|caio|2|09/08/2022
