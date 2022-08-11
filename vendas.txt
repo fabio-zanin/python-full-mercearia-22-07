@@ -1,1 +1,4 @@
-maca|5|Frutas|joão|caio|2|09/08/2022
+maca|2|Frutas|joão|caio|2|11/08/2022
+maca|2|Frutas|joão|caio|2|11/08/2022
+banana|2|Frutas|joão|caio|2|11/08/2022
+abacaxi|2|Frutas|joão|caio|1|11/08/2022

@@ -167,6 +167,16 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
             <li>Função efetuar venda.</li>
         </ul>
     </td> 
-    </tr>    
+    </tr>
+    <tr>
+    <th>13</th>
+    <td>
+        <p align="top"><b>Aula: Controller venda #2 | Relatórios de produtos</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função relatórios de produtos.</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>

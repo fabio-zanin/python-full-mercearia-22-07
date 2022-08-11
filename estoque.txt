@@ -1,2 +1,3 @@
-maca|5|Frutas|8
-banana|2|Frutas|20
+maca|2|Frutas|16
+banana|2|Frutas|18
+abacaxi|2|Frutas|19
