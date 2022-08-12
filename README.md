@@ -178,5 +178,26 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+    <tr>
+    <th>12</th>
+    <td>
+        <p align="top"><b>Aula: Controller venda #1 | Efetuar venda</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função efetuar venda.</li>
+        </ul>
+    </td> 
+    </tr>
+    <tr>
+    <th>14</th>
+    <td>
+        <p align="top"><b>Aula: Controller Venda #4 | mostrar vendas</b></p>
+        <p align="justify">Atualização Controller.py </p>
+        <ul>
+            <li>Função mostrar vendas.</li>
+        </ul>
+    </td> 
+    </tr>
+
 </tbody>
 </table>

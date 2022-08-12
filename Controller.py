@@ -223,7 +223,28 @@ class ControllerVenda:
                     f"Quantidade: {i['quantidade']}\n")
             a += 1
 
-            
+    def mostrarVenda(self, dataInicio, dataTermino):
+        vendas = DaoVenda.ler()
+        dataInicio1 = datetime.strptime(dataInicio, '%d/%m/%Y')
+        dataTermino1 = datetime.strptime(dataTermino, '%d/%m/%Y')
+
+        vendasSelecionadas = list(filter(lambda x: datetime.strptime(x.data, '%d/%m/%Y') >= dataInicio1
+                                    and datetime.strptime(x.data, '%d/%m/%Y') <= dataTermino1, vendas))
+        cont = 1
+        total = 0
+        for i in vendasSelecionadas:
+            print(f'==========Venda [{cont}]==========')
+            print(f"Nome: {i.itensVendido.nome}\n"
+                  f"Categoria: {i.itensVendido.categoria}\n"
+                  f"Data: {i.data}\n"
+                  f"Quantidade: {i.quantidadeVendida}\n"
+                  f"Cliente: {i.comprador}\n"
+                  f"Vendedor: {i.vendedor}\n"
+            )
+            total += int(i.itensVendido.preco) * int(i.quantidadeVendida)
+            cont += 1
+        print(f"Total vendido: {total}")
+
 
 # Cadastrar Venda
 # a = ControllerVenda()
@@ -232,5 +253,9 @@ class ControllerVenda:
 # a.cadastrarVenda('maca', 'joão', 'caio', 2)
 
 # Relatorio
-a = ControllerVenda()
-a.relatorioProdutos()
+# a = ControllerVenda()
+# a.relatorioProdutos()
+
+# Mostrar Venda
+# a = ControllerVenda()
+# a.mostrarVenda("08/08/2022", "11/08/2022")
