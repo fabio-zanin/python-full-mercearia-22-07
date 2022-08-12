@@ -78,7 +78,7 @@ class DaoFornecedor:
     @classmethod
     def salvar(cls, fornecedor : Fornecedor):
         with open('fornecedores.txt', 'a') as arq:
-            arq.writelines(fornecedor.nome + "|" + fornecedor.cpnj + "|" + fornecedor.telefone + "|" +
+            arq.writelines(fornecedor.nome + "|" + fornecedor.cnpj + "|" + fornecedor.telefone + "|" +
                            fornecedor.categoria)
             arq.writelines('\n')
     

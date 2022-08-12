@@ -198,6 +198,18 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
-
+    <tr>
+    <th>15</th>
+    <td>
+        <p align="top"><b>Aula: Controller fornecedor</b></p>
+        <p align="justify">Atualização Controller.py</p>
+        <ul>
+            <li>Função cadastrar fornecedor</li>
+            <li>Função remover fornecedor</li>
+            <li>Função lterar fornecedor</li>
+            <li>Função mostrar fornecedor</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>
