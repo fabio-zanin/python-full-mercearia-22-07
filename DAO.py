@@ -116,19 +116,22 @@ class DaoPessoa:
 
 class DaoFuncionario:
     @classmethod
-    def salvar(cls, funcionarios : Funcionario):
+    def salvar(cls, funcionario: Funcionario):
         with open('funcionarios.txt', 'a') as arq:
-            arq.writelines(funcionarios.nome + "|" + funcionarios.cpnj + "|" + funcionarios.telefone + "|" +
-                           funcionarios.categoria)
+            arq.writelines(funcionario.clt + "|" + funcionario.nome + "|" + funcionario.telefone
+                           + "|" + funcionario.cpf + "|" + funcionario.email + "|" + funcionario.endereco)
             arq.writelines('\n')
-    
+
     @classmethod
     def ler(cls):
         with open('funcionarios.txt', 'r') as arq:
             cls.funcionarios = arq.readlines()
-        cls.funcionarios = list(map(lambda x : x.replace('\n', ''), cls.funcionarios))
-        cls.funcionarios = list(map(lambda x : x.split('|'), cls.funcionarios))
-        func = []
+
+        cls.funcionarios = list(map(lambda x: x.replace('\n', ''), cls.funcionarios))
+        cls.funcionarios = list(map(lambda x: x.split('|'), cls.funcionarios))
+
+        funcionario = []
         for i in cls.funcionarios:
-            func.append(Funcionario(i[0], i[1], i[2], i[3]))
-        return func
+            funcionario.append(Funcionario(i[0], i[1], i[2], i[3], i[4], i[5]))
+
+        return funcionario

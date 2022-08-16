@@ -40,7 +40,6 @@ class Pessoa:
         self.endereco = endereco
 
 class Funcionario(Pessoa):
-    def __int__(self, clt, nome, telefone, cpf, email, endereco):
+    def __init__(self, clt, nome, telefone, cpf, email, endereco):
         self.clt = clt
         super(Funcionario, self).__init__(nome, telefone, cpf, email, endereco)
-

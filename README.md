@@ -224,5 +224,18 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
+        <tr>
+    <th>17</th>
+    <td>
+        <p align="top"><b>Aula: Controller funcionario | funções funcionario</b></p>
+        <p align="justify">Atualização Controller.py</p>
+        <ul>
+            <li>Função cadastrar funcionario</li>
+            <li>Função remover funcionario</li>
+            <li>Função lterar funcionario</li>
+            <li>Função mostrar funcionario</li>
+        </ul>
+    </td> 
+    </tr>
 </tbody>
 </table>

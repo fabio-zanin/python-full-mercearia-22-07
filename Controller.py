@@ -410,7 +410,7 @@ class ControllerCliente:
 
 # Cadastrar Cliente
 # (nome, telefone=10, cpf=11, email, endereco)
-a = ControllerCliente()
+# a = ControllerCliente()
 # # a.cadastrarCliente('caio', '1234567890', '12345678900', 'caio@email.com', 'rua nova 1')
 # a.cadastrarCliente('remover', '1234567890', '12345678903', 'remover@email.com', 'rua nova 1')
 
@@ -423,3 +423,89 @@ a = ControllerCliente()
 
 # Mostrar Cliente
 # a.mostrarClientes()
+
+
+class ControllerFuncionario:
+    def cadastrarFuncionario(self, clt, nome, telefone, cpf, email, endereco):
+        x = DaoFuncionario.ler()
+
+        listaCpf = list(filter(lambda x: x.cpf == cpf, x))
+        listaClt = list(filter(lambda x: x.clt == clt, x))
+        if len(listaCpf) > 0:
+            print('CPF já existente')
+        elif len(listaClt) > 0:
+            print('Já existe um funcionario com essa clt')
+        else:
+            if len(cpf) == 11 and len(telefone) >= 10 and len(telefone) <=11:
+                DaoFuncionario.salvar(Funcionario(clt, nome, telefone, cpf, email, endereco))
+                print('Funcionario Cadastrado com sucesso')
+            else:
+                print('digite um cpf ou telefone válido')
+
+    def alterarFuncionario(self, nomeAlterar, novoClt, novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco):
+        x = DaoFuncionario.ler()
+
+        est = list(filter(lambda x: x.nome == nomeAlterar, x))
+        if len(est) > 0:
+            x = list(map(lambda x: Funcionario(novoClt,novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco) if (
+                    x.nome == nomeAlterar) else (x), x))
+        else:
+            print('O funcionario que deseja alterar nao existe')
+
+        with open('funcionarios.txt', 'w') as arq:
+            for i in x:
+                arq.writelines(i.clt + "|" + i.nome + "|" + i.telefone + "|" + i.cpf + "|" + i.email
+                               + "|" + i.endereco)
+                arq.writelines('\n')
+            print('funcionario alterado com sucesso')
+
+    def removerFuncionario(self, nome):
+        x = DaoFuncionario.ler()
+
+        est = list(filter(lambda x: x.nome == nome, x))
+        if len(est) > 0:
+            for i in range(len(x)):
+                if x[i].nome == nome:
+                    del  x[i]
+                    break
+        else:
+            print('O funcionario que deseja remover não existe')
+            return None
+
+        with open('funcionarios.txt', 'w') as arq:
+            for i in x:
+                arq.writelines(i.nome + "|" + i.telefone + "|" + i.cpf + "|" + i.email + "|" + i.endereco)
+                arq.writelines('\n')
+            print('Funcionarios removido com sucesso')
+
+    def mostrarFuncionarios(self):
+        funcionario = DaoFuncionario.ler()
+
+        if len(funcionario) == 0:
+            print("Lista de funcionarios vazia")
+
+        for i in funcionario:
+            print("========Funcionario==========")
+            print(f"Nome: {i.nome}\n"
+                  f"Telefone: {i.telefone}\n"
+                  f"Email: {i.email}\n"
+                  f"Endereço: {i.endereco}\n"
+                  f"CPF: {i.cpf}\n"
+                  f"CLT: {i.clt}\n")
+
+
+# Cadastrar Funcionario
+# (clt, nome, telefone, cpf, email, endereco)
+a = ControllerFuncionario()
+# a.cadastrarFuncionario('1', 'jose', '1234567890', '12345678900', 'jose@email.com', 'rua esquerda, 20')
+# a.cadastrarFuncionario('2', 'andre', '1234567890', '12345678901', 'jose@email.com', 'rua esquerda, 20')
+
+# Alterar Funcionario
+# (nomeAlterar, novoClt, novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco)
+# a.alterarFuncionario('andre', '3', 'remover', '0987654321', '12345678901', 'remover@email.com', 'rua nova, 200')
+
+# Remover Funcionario
+# a.removerFuncionario('remover')
+
+# Mostrar Funcionario
+# a.mostrarFuncionarios()
