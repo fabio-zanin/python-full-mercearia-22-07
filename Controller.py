@@ -344,3 +344,82 @@ class ControllerFornecedor:
 # Moatrar Fornecedor
 # a = ControllerFornecedor()
 # a.mostrarFornecedores()
+
+class ControllerCliente:
+    def cadastrarCliente(self, nome, telefone, cpf, email, endereco):
+        x = DaoPessoa.ler()
+
+        listaCpf = list(filter(lambda x: x.cpf == cpf, x))
+        if len(listaCpf) > 0:
+            print('CPF já existente')
+        else:
+            if len(cpf) == 11 and len(telefone) >= 10 and len(telefone) <=11:
+                DaoPessoa.salvar(Pessoa(nome, telefone, cpf, email, endereco))
+                print('Cliente Cadastrado com sucesso')
+            else:
+                print('digite um cpf ou telefone válido')
+
+    def alterarCliente(self, nomeAlterar, novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco):
+        x = DaoPessoa.ler()
+
+        est = list(filter(lambda x: x.nome == nomeAlterar, x))
+        if len(est) > 0:
+            x = list(map(lambda x: Pessoa(novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco) if (
+                        x.nome == nomeAlterar) else (x), x))
+        else:
+            print('O cliente que deseja alterar nao existe')
+
+        with open('clientes.txt', 'w') as arq:
+            for i in x:
+                arq.writelines(i.nome + "|" + i.telefone + "|" + i.cpf + "|" + i.email + "|" + i.endereco)
+                arq.writelines('\n')
+            print('cliente alterado com sucesso')
+
+    def removerCliente(self, nome):
+        x = DaoPessoa.ler()
+
+        est = list(filter(lambda x: x.nome == nome, x))
+        if len(est) > 0:
+            for i in range(len(x)):
+                if x[i].nome == nome:
+                    del  x[i]
+                    break
+        else:
+            print('O cliente que deseja remover não existe')
+            return None
+
+        with open('clientes.txt', 'w') as arq:
+            for i in x:
+                arq.writelines(i.nome + "|" + i.telefone + "|" + i.cpf + "|" + i.email + "|" + i.endereco)
+                arq.writelines('\n')
+            print('Cliente removido com sucesso')
+
+    def mostrarClientes(self):
+        clientes = DaoPessoa.ler()
+
+        if len(clientes) == 0:
+            print("Lista de clientes vazia")
+
+        for i in clientes:
+            print("=========Cliente=========")
+            print(f"Nome: {i.nome}\n"
+                  f"Telefone: {i.telefone}\n"
+                  f"Endereço: {i.endereco}\n"
+                  f"Email: {i.email}\n"
+                  f"CPF: {i.cpf}")
+
+# Cadastrar Cliente
+# (nome, telefone=10, cpf=11, email, endereco)
+a = ControllerCliente()
+# # a.cadastrarCliente('caio', '1234567890', '12345678900', 'caio@email.com', 'rua nova 1')
+# a.cadastrarCliente('remover', '1234567890', '12345678903', 'remover@email.com', 'rua nova 1')
+
+# Alterar Cliente
+# (nomeAlterar, novoNome, novoTelefone, novoCpf, novoEmail, novoEndereco)
+# a.alterarCliente('joao', 'andre', '1234567895', '12345678905', 'andre@email.com', 'rua direita, 20')
+
+# Remover Cliente
+# a.removerCliente('remover')
+
+# Mostrar Cliente
+# a.mostrarClientes()

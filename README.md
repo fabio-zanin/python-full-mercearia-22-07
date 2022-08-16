@@ -201,13 +201,26 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
     <tr>
     <th>15</th>
     <td>
-        <p align="top"><b>Aula: Controller fornecedor</b></p>
+        <p align="top"><b>Aula: Controller fornecedor | funções fornecedor</b></p>
         <p align="justify">Atualização Controller.py</p>
         <ul>
             <li>Função cadastrar fornecedor</li>
             <li>Função remover fornecedor</li>
             <li>Função lterar fornecedor</li>
             <li>Função mostrar fornecedor</li>
+        </ul>
+    </td> 
+    </tr>
+    <tr>
+    <th>16</th>
+    <td>
+        <p align="top"><b>Aula: Controller cliente | funções cliente</b></p>
+        <p align="justify">Atualização Controller.py</p>
+        <ul>
+            <li>Função cadastrar cliente</li>
+            <li>Função remover cliente</li>
+            <li>Função lterar cliente</li>
+            <li>Função mostrar cliente</li>
         </ul>
     </td> 
     </tr>

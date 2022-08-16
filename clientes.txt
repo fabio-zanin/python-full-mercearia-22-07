@@ -1,0 +1,3 @@
+caio|1234567890|12345678900|caio@email.com|rua nova 1
+marcos|1234567890|12345678901|marcos@email.com|rua nova 1
+andre|1234567895|12345678905|andre@email.com|rua direita, 20
