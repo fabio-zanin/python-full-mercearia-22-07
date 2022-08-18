@@ -1,3 +1,6 @@
-maca|2|Frutas|16
-banana|2|Frutas|18
-abacaxi|2|Frutas|19
+abacaxi|2|Frutas|20
+banana|5|Frutas|20
+maca|6|Frutas|40
+queijo|4|Frios|100
+contra file|40|Sem categoria|10
+picanha|40|Carnes|100

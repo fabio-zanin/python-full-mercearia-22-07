@@ -199,9 +199,23 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
     </td> 
     </tr>
     <tr>
+    <tr>
+    <th>15 - 17</th>
+    <td>
+        <p align="top"><b>Aula: Controller gerais</b></p>
+        <p align="justify">Atualização Controller.py</p>
+        <ul>
+            <li>funções fornecedor</li>
+            <li>funções cliente</li>
+            <li>funções funcionario</li>
+        </ul>
+    </td> 
+    </tr>
+    <tr>
+    <tr>
     <th>15</th>
     <td>
-        <p align="top"><b>Aula: Controller fornecedor | funções fornecedor</b></p>
+        <p align="top"><b>funções fornecedor</b></p>
         <p align="justify">Atualização Controller.py</p>
         <ul>
             <li>Função cadastrar fornecedor</li>
@@ -211,10 +225,9 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         </ul>
     </td> 
     </tr>
-    <tr>
     <th>16</th>
     <td>
-        <p align="top"><b>Aula: Controller cliente | funções cliente</b></p>
+        <p align="top"><b>funções cliente</b></p>
         <p align="justify">Atualização Controller.py</p>
         <ul>
             <li>Função cadastrar cliente</li>
@@ -227,13 +240,25 @@ Para relatar bugs ou fazer perguntas utilize o [Issues](https://github.com/fabio
         <tr>
     <th>17</th>
     <td>
-        <p align="top"><b>Aula: Controller funcionario | funções funcionario</b></p>
+        <p align="top"><b>funções funcionario</b></p>
         <p align="justify">Atualização Controller.py</p>
         <ul>
-            <li>Função cadastrar funcionario</li>
-            <li>Função remover funcionario</li>
-            <li>Função lterar funcionario</li>
-            <li>Função mostrar funcionario</li>
+            <li>Função cadastrar funcionário</li>
+            <li>Função remover funcionário</li>
+            <li>Função lterar funcionário</li>
+            <li>Função mostrar funcionário</li>
+        </ul>
+    </td> 
+    </tr>
+    <tr>
+    <th>18</th>
+    <td>
+        <p align="top"><b>Controller categoria #5 | Terminando TODO</b></p>
+        <p align="top"><b>Controller categoria #6 | Terminando TODO</b></p>
+        <p align="justify">Atualização Controller.py</p>
+        <ul>
+            <li>Função colacar sem categoria no estoque</li>
+            <li>Função aleterar a categoria do estoque</li>
         </ul>
     </td> 
     </tr>
